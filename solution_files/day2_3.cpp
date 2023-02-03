@@ -11,7 +11,6 @@ vector<int> solution(int numer1, int denom1, int numer2, int denom2) {
     int biggerNum = numerSum >= denomSum? numerSum: denomSum;
     int smallerNum = numerSum == biggerNum? denomSum : numerSum;
     
-    int maxCommDiv = 0;
     int big_sml = 0;
     while(smallerNum != 0) {    // Euclidean algorithm
         big_sml = biggerNum % smallerNum;   
